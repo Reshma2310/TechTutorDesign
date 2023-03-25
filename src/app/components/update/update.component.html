@@ -1,0 +1,11 @@
+<div class="mainUC">
+    <div mat-dialog-content class="content-UC">        
+            <div class="ip-UC"><span class="titleUC">Name: </span><input matInput [(ngModel)]="Name" type="text" placeholder="Name"></div>
+            <div class="ip-UC"><span class="titleUC">Email: </span><input matInput [(ngModel)]="Email" type="text" placeholder="Email"></div>
+            <div class="ip-UC"><span class="titleUC">Password: </span><input matInput [(ngModel)]="Password" type="text" placeholder="Password"></div>
+            <div class="ip-UC"><span class="titleUC">Course Name: </span><input matInput [(ngModel)]="CourseName" type="text" placeholder="CourseName"></div>
+            <div class="ip-UC"><span class="titleUC">Duration: </span><input matInput [(ngModel)]="Duration" type="text" placeholder="Duration"></div>       
+            <div class="ip-UC"><button mat-flat-button class="btn-UC" (click)="onClose()">Update</button>
+        </div>
+    </div>
+</div>

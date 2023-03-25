@@ -1,0 +1,61 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../../../assets/book.jpg);
+  }
+  
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+  }
+  
+  h1.example-app-name {
+    margin-left: 8px;
+  }
+
+  .example-toolbar {
+    display: flex;
+    height: 14vh;
+    background-color: rgba(#000000 , .5);
+  }
+  
+  .example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+    background: transparent;
+  }
+  
+  .example-is-mobile .example-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+  .nav-db {
+    display: flex;
+    width: 10vw;
+    color: white;
+  }
+  .head_nav {
+    font-size: xx-large;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px black;
+    padding-left: 20px;
+  }  
+  .side-db {
+    border: flex;
+  }
+  ::ng-deep .mat-drawer-inner-container {
+    background-image: url(../../../assets/book.jpg);
+    // border: 1px solid blue!important;
+  }
+  .text-db {
+    padding-left: 10px;
+  }

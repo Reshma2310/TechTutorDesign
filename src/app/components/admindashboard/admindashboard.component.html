@@ -1,0 +1,33 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+    <mat-toolbar class="example-toolbar">
+        <button mat-icon-button (click)="snav.toggle()"><mat-icon style="color: white;">menu</mat-icon></button>
+        <div class="head_nav">TechTutor Coaching Center</div>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav class="side-db" #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+            fixedTopGap="56">
+            <mat-nav-list>
+                <!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>   //for loop-->
+                <a mat-list-item routerLink="/adminpage/add" class="hover-db"><div class="nav-db">
+                    <div class="iconLeft-db"><mat-icon>person_add</mat-icon>
+                        <!-- <img src="../../../assets/lightbulb.svg" width="25px" class="light-db"> -->
+                    </div>
+                    <div class="text-db">Add Student</div>
+                </div></a>
+                <a mat-list-item routerLink="/adminpage/dashboard" class="hover-db"><div class="nav-db">
+                    <div class="iconLeft-db"><mat-icon>view_list</mat-icon>
+                        <!-- <img src="../../../assets/notifications.svg" width="25px" class="light-db"> -->
+                    </div>
+                    <div class="text-db">Students List</div>
+                </div></a>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <!-- <p *ngFor="let content of fillerContent">{{content}}</p> -->
+            <router-outlet></router-outlet>
+            
+        </mat-sidenav-content>
+    </mat-sidenav-container>    
+</div>

@@ -1,0 +1,114 @@
+.mainSI {
+    width: 99vw;
+    height: 97vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgSI {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.loginSI {
+    width: 35vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginSI:after {
+    opacity: 0.5;
+}
+.headSI {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.formSI {
+    width: 75%;
+    height: 70%;
+    // border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputSI {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.inputSI input {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+    color: white;
+}
+.text-fields {
+    width: 100%;
+    height: 9%;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+.iconsSI {
+    width: 48%;
+    height: 20%;
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.squareSI {
+    width: 32px;
+    height: 32px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnSI {
+    width: 48%;
+    height: 25%;
+    // border: 1px solid pink;
+    display: flex;
+    align-items: flex-end;
+}
+.loginBtn {
+    width: 100%;
+    height: 40%;
+}
+.loginBtn button {
+    width: 100%;
+    height: 100%;
+}
+::ng-deep .loginBtn .mat-mdc-button-touch-target {
+    height: 100% !important;
+    background-color: rgb(247, 139, 157);
+}
+::ng-deep .loginBtn .mdc-button__label {
+    color: white;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+::ng-deep .loginBtn .mat-mdc-button-touch-target:hover {
+    height: 100%;
+    background-color: rgb(98, 141, 160);
+    color: white !important;
+}

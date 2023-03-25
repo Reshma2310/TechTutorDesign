@@ -1,0 +1,15 @@
+<div class="mainAS">
+    <mat-card class="formAS">
+        <form class="form_fields" [formGroup]="addForm">
+            <div class="form_input">
+                <input placeholder="Enter name" formControlName="name">
+                <input placeholder="Enter Email" formControlName="email">            
+                <input placeholder="Enter Password" formControlName="pwd">
+                <input placeholder="Enter Course Name" formControlName="course">
+                <input placeholder="Enter Duration" formControlName="time">
+            </div>
+            <div class="btn_class"><button mat-flat-button (click)="onSubmit()">Register</button>
+            <button mat-flat-button (click)="onReset()">Reset</button></div>
+        </form>
+    </mat-card>
+</div>
